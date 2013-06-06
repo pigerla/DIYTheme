@@ -190,18 +190,17 @@ ul.compact li a {
 /* @end */
 
 /* @group Header */
-#header, #header a { color: silver; font-family: "文泉驿微米黑", "微软雅黑", "Open Sans","Ubuntu", Helvetica, Arial, sans-serif;}
+#header, #header a { color: #21759b; font-family: "微软雅黑", "Open Sans","Ubuntu", Helvetica, Arial, sans-serif;}
 #header .hover { color: transparent; }
-#header:hover a { color: black; text-shadow: #aaa 2px 2px 3px;}
 #header:hover a:hover { text-decoration: none; }
-#header a:hover .hover { color: silver; }
+
 #header {
 	position: relative;
 	font-variant: small-caps;
-	line-height: 8em;  /* 1em */
+	height: 10em;
 	margin-top: 1.5em;
 	margin-bottom: 0.5em;
-	padding-left: 0.5em;
+	padding: 2em 3em 0 3em;
 	/*以下是我添加的*/
 	background: white;
 	border: 1px solid #ccc;
@@ -212,19 +211,20 @@ ul.compact li a {
 }
 
 #header h1 {
-	margin-bottom: 0;
 	/*line-height: 0.9em;-> 2em*/
-	line-height: 5em;
 	font-size: 5em;
 	display: block;
 	font-weight: normal;
+}
+#header h1:hover {
+	color: black; text-shadow: #aaa 2px 2px 3px;
 }
 
 #header ul {
 	position: absolute;
 	/*top: 0;-> bottom: 0; */
 	bottom: 0;
-	right: 0;
+	right: 3em;
 	font-size: 100%;
 	line-height: 4em;
 	display: block;
@@ -237,17 +237,26 @@ ul.compact li a {
 	padding: 0.4em 0.3em 0 0.3em;
 	display: inline;
 }
+#header ul:hover {
+	color: black; text-shadow: #aaa 2px 2px 3px;
+}
 #header ul li a:hover {
 	color: blue;
 	border-bottom: 2px solid blue;
 }
-#header .byline {
-	color: silver;
-	font-size: 2em;
+#header p{
+	position: absolute;
+	top: 7em;
+	left: 3.5em;
 }
-#header:hover .byline a { color: silver; text-shadow: none; }
-#header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
-
+/*
+span .byline {
+	color: silver;
+	font-size: 20pt;
+}
+span .byline a { color: silver; text-shadow: none; }
+span .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
+*/
 /* @group Twitter */
 #twitter_update_list { display: inline; margin: 0; }
 #twitter_update_list li { display: inline; margin: 0;}
@@ -375,7 +384,7 @@ pre > code {
 
 /* @group Disqus */
 #disqus_thread {
-	margin-top: 2.93em;
+	margin-top: 0.5em;
 }
 .dsq-comment-body {
 	text-align: justify;
