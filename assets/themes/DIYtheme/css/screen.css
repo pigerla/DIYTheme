@@ -200,12 +200,12 @@ ul.compact li a {
 	font-variant: small-caps;
 	line-height: 8em;  /* 1em */
 	margin-top: 1.5em;
-	margin-left: .4em;
 	margin-bottom: 0.5em;
+	padding-left: 0.5em;
 	/*以下是我添加的*/
 	background: white;
 	border: 1px solid #ccc;
-/* More experimental CSS3 features */
+    /* 框框阴影 */
 	box-shadow: 2px 2px 8px #aaa;
 	-webkit-box-shadow: 2px 2px 8px #aaa;
 	-moz-box-shadow: 2px 2px 8px #aaa;
@@ -214,8 +214,8 @@ ul.compact li a {
 #header h1 {
 	margin-bottom: 0;
 	/*line-height: 0.9em;-> 2em*/
-	line-height: 6em;
-	font-size: 6em;
+	line-height: 5em;
+	font-size: 5em;
 	display: block;
 	font-weight: normal;
 }
@@ -243,8 +243,7 @@ ul.compact li a {
 }
 #header .byline {
 	color: silver;
-	font-size: 1em;
-	line-height: 30%
+	font-size: 2em;
 }
 #header:hover .byline a { color: silver; text-shadow: none; }
 #header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
