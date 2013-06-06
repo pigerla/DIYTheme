@@ -1,4 +1,3 @@
-DIYTheme
-========
+This is blog theme compatible with Jekyll-Bootstrap
 
-this jekyll-bootstrap created by myself
+<http://jekyllbootstrap.com> for usage.
