@@ -1,10 +1,3 @@
-/* @override http://mark.reid.dev/files/css/screen.css */
-
-/* @override 
-	http://mark.reid.dev/files/css/screen.css
-	http://mark.reid.name/files/css/screen.css
-*/
-
 /* screen.css
  *
  * A clean, simple stylesheet that aims for
@@ -85,7 +78,7 @@ sup { line-height: 1ex; }
 }
 
 /*>>>>padding-top: 0;改为padding-top: 1em;*/
-#disqus_thread { padding-top: 1em; }
+#disqus_thread { padding-top: 1em; margin-top: 0.5em; }
 
 /* TODO
 #page { counter-reset: section; }
@@ -197,7 +190,7 @@ ul.compact li a {
 /* @end */
 
 /* @group Header */
-#header, #header a { color: silver; }
+#header, #header a { color: silver; font-family: "文泉驿微米黑", "微软雅黑", "Open Sans","Ubuntu", Helvetica, Arial, sans-serif;}
 #header .hover { color: transparent; }
 #header:hover a { color: black; text-shadow: #aaa 2px 2px 3px;}
 #header:hover a:hover { text-decoration: none; }
@@ -205,9 +198,10 @@ ul.compact li a {
 #header {
 	position: relative;
 	font-variant: small-caps;
-	line-height: 4em;  /* 1em */
-	margin-top: .5em;
-	margin-bottom: 1em;
+	line-height: 8em;  /* 1em */
+	margin-top: 1.5em;
+	margin-left: .4em;
+	margin-bottom: 0.5em;
 	/*以下是我添加的*/
 	background: white;
 	border: 1px solid #ccc;
@@ -218,10 +212,10 @@ ul.compact li a {
 }
 
 #header h1 {
-	font-family: Palatino, georgia, "times new roman", serif;
 	margin-bottom: 0;
 	/*line-height: 0.9em;-> 2em*/
-	line-height: 2em;
+	line-height: 6em;
+	font-size: 6em;
 	display: block;
 	font-weight: normal;
 }
@@ -232,7 +226,7 @@ ul.compact li a {
 	bottom: 0;
 	right: 0;
 	font-size: 100%;
-	line-height: 2em;
+	line-height: 4em;
 	display: block;
 	margin: 0;
 	width: 50%;
@@ -245,13 +239,12 @@ ul.compact li a {
 }
 #header ul li a:hover {
 	color: blue;
-	font-weight: bold; /*我添加字体变粗*/
 	border-bottom: 2px solid blue;
 }
 #header .byline {
 	color: silver;
-	font-size: 1.5em;
-	line-height: 75%
+	font-size: 1em;
+	line-height: 30%
 }
 #header:hover .byline a { color: silver; text-shadow: none; }
 #header:hover .byline a:hover { color: black; text-shadow: #aaa 1px 1px 2px;}
