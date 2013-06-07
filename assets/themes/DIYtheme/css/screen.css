@@ -196,8 +196,7 @@ ul.compact li a {
 
 #header {
 	position: relative;
-	font-variant: small-caps;
-	height: 10em;
+	/*font-variant: small-caps;这个表示是头部的字符都大写，并且第一个字符超大*/
 	margin-top: 1.5em;
 	margin-bottom: 0.5em;
 	padding: 2em 3em 0 3em;
@@ -212,7 +211,7 @@ ul.compact li a {
 
 #header h1 {
 	/*line-height: 0.9em;-> 2em*/
-	font-size: 5em;
+	font-size: 4em;
 	display: block;
 	font-weight: normal;
 }
@@ -221,16 +220,12 @@ ul.compact li a {
 }
 
 #header ul {
-	position: absolute;
-	/*top: 0;-> bottom: 0; */
-	bottom: 0;
-	right: 3em;
 	font-size: 100%;
-	line-height: 4em;
+	line-height: 3em;
 	display: block;
-	margin: 0;
-	width: 50%;
-	text-align: right;
+	border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+    padding-left: 0;
 }
 #header ul li { display: inline; }
 #header ul li a {
@@ -247,7 +242,6 @@ ul.compact li a {
 #header p{
 	position: absolute;
 	top: 7em;
-	left: 3.5em;
 }
 /*
 span .byline {
